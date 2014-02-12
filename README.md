@@ -6,7 +6,7 @@ shape-shifter is a all-in-one icon element that can morph into different shapes.
 
 ## Demo
 
-> [Check it live](http://webcomponents.github.io/shape-shifter).
+> [Check it live](http://maklesoft.github.io/shape-shifter).
 
 ## Usage
 
