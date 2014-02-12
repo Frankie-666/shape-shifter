@@ -1,12 +1,12 @@
-# &lt;my-element&gt;
+# &lt;shape-shifter&gt;
 
-TODO: Write a project description
+shape-shifter is a all-in-one icon element that can morph into different shapes. Pretty cool for animated icons but works for static icons, too!
 
-> Maintained by [Your Name](https://github.com/yourname).
+> Maintained by **Martin Kleinschrodt** (https://github.com/maklesoft).
 
 ## Demo
 
-> [Check it live](http://webcomponents.github.io/element-boilerplate).
+> [Check it live](http://webcomponents.github.io/shape-shifter).
 
 ## Usage
 
@@ -20,13 +20,13 @@ TODO: Write a project description
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="src/my-element.html">
+    <link rel="import" href="src/shape-shifter.html">
     ```
 
 3. Start using it!
 
     ```html
-    <my-element></my-element>
+    <shape-shifter shape="plus"></shape-shifter>
     ```
 
 ## Setup
@@ -52,13 +52,31 @@ In order to run it locally you'll need a basic server setup.
     $ grunt connect
     ```
 
+## Dev Setup
+
+If you want to add shapes or change some other styles, you'll have to set up **Compass**
+
+1. Install [Compass](http://compass-style.org/install/)
+
+2. Install local dependencies (if you haven't yet):
+
+    ```sh
+    $ npm install
+    ```
+
+3. Edit `src/src-element.scss`
+
+4. Compile the CSS:
+
+    ```sh
+    $ grunt compass
+    ```
+
 ## Options
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`foo`      | *string*                  | `bar`               | Lorem ipsum
-`bar`      | `abc`, `def`, `ghi`       | `foo`               | Lorem ipsum
-`height`   | *int*                     | `100`               | Lorem ipsum
+`shape`    | *string*                  | [empty]             | The shape to take on. Can be one of: plus, cancel, check, menu, more, left, right, top, bottom. If empty, will show nothing.
 
 ## Contributing
 
@@ -70,7 +88,7 @@ Attribute  | Options                   | Default             | Description
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/webcomponents/element-boilerplate/releases).
+For detailed changelog, check [Releases](https://github.com/maklesoft/shape-shifter/releases).
 
 ## License
 
