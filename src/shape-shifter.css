@@ -137,7 +137,7 @@ line {
 }
 
 /* line 72, shape-shifter.scss */
-.arrow-right line:nth-child(1) {
+.right line:nth-child(1) {
   -webkit-transform: translate(0, -17px) rotate(45deg) scale(9, 1);
   -moz-transform: translate(0, -17px) rotate(45deg) scale(9, 1);
   -ms-transform: translate(0, -17px) rotate(45deg) scale(9, 1);
@@ -146,7 +146,7 @@ line {
 }
 
 /* line 76, shape-shifter.scss */
-.arrow-right line:nth-child(3) {
+.right line:nth-child(3) {
   -webkit-transform: translate(0, 17px) rotate(-45deg) scale(9, 1);
   -moz-transform: translate(0, 17px) rotate(-45deg) scale(9, 1);
   -ms-transform: translate(0, 17px) rotate(-45deg) scale(9, 1);
@@ -155,7 +155,7 @@ line {
 }
 
 /* line 80, shape-shifter.scss */
-.arrow-left line:nth-child(1) {
+.left line:nth-child(1) {
   -webkit-transform: translate(0, -17px) rotate(-45deg) scale(9, 1);
   -moz-transform: translate(0, -17px) rotate(-45deg) scale(9, 1);
   -ms-transform: translate(0, -17px) rotate(-45deg) scale(9, 1);
@@ -164,7 +164,7 @@ line {
 }
 
 /* line 84, shape-shifter.scss */
-.arrow-left line:nth-child(3) {
+.left line:nth-child(3) {
   -webkit-transform: translate(0, 17px) rotate(45deg) scale(9, 1);
   -moz-transform: translate(0, 17px) rotate(45deg) scale(9, 1);
   -ms-transform: translate(0, 17px) rotate(45deg) scale(9, 1);
@@ -173,7 +173,7 @@ line {
 }
 
 /* line 88, shape-shifter.scss */
-.arrow-up line:nth-child(1) {
+.up line:nth-child(1) {
   -webkit-transform: translate(-17px, 0) rotate(-45deg) scale(9, 1);
   -moz-transform: translate(-17px, 0) rotate(-45deg) scale(9, 1);
   -ms-transform: translate(-17px, 0) rotate(-45deg) scale(9, 1);
@@ -182,7 +182,7 @@ line {
 }
 
 /* line 92, shape-shifter.scss */
-.arrow-up line:nth-child(3) {
+.up line:nth-child(3) {
   -webkit-transform: translate(17px, 0) rotate(45deg) scale(9, 1);
   -moz-transform: translate(17px, 0) rotate(45deg) scale(9, 1);
   -ms-transform: translate(17px, 0) rotate(45deg) scale(9, 1);
@@ -191,7 +191,7 @@ line {
 }
 
 /* line 96, shape-shifter.scss */
-.arrow-down line:nth-child(1) {
+.down line:nth-child(1) {
   -webkit-transform: translate(-17px, 0) rotate(45deg) scale(9, 1);
   -moz-transform: translate(-17px, 0) rotate(45deg) scale(9, 1);
   -ms-transform: translate(-17px, 0) rotate(45deg) scale(9, 1);
@@ -200,7 +200,7 @@ line {
 }
 
 /* line 100, shape-shifter.scss */
-.arrow-down line:nth-child(3) {
+.down line:nth-child(3) {
   -webkit-transform: translate(17px, 0) rotate(-45deg) scale(9, 1);
   -moz-transform: translate(17px, 0) rotate(-45deg) scale(9, 1);
   -ms-transform: translate(17px, 0) rotate(-45deg) scale(9, 1);
