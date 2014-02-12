@@ -7,9 +7,23 @@ module.exports = function(grunt) {
                     keepalive: true
                 }
             }
+        },
+        compass: {
+            dist: {
+                options: {
+                    cssDir: "src",
+                    sassDir: "src"
+                },
+                files: [{
+                    expand: true,
+                    src: ['src/shape-shifter.scss'],
+                    ext: '.css'
+                }]
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-compass');
 
 };
