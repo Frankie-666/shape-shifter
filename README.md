@@ -1,6 +1,6 @@
 # &lt;shape-shifter&gt;
 
-shape-shifter is a all-in-one icon element that can morph into different shapes. Pretty cool for animated icons but works for static icons, too!
+shape-shifter is an all-in-one icon element that can morph into different shapes. Pretty cool for animated icons but works for static icons, too!
 
 > Maintained by **Martin Kleinschrodt** (https://github.com/maklesoft).
 
@@ -76,7 +76,8 @@ If you want to add shapes or change some other styles, you'll have to set up **C
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`shape`    | *string*                  | [empty]             | The shape to take on. Can be one of: plus, cancel, check, menu, more, left, right, top, bottom. If empty, will show nothing.
+`shape`    | plus, cancel, check, menu, more, left, right, top, bottom | [empty] | The shape to take on. If empty, will show nothing.
+`color`    | *string*                  | `#000`              | The color of the element
 
 ## Contributing
 

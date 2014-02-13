@@ -15,7 +15,6 @@ svg {
 }
 
 line {
-    stroke: #000;
     stroke-width: 6;
     @include transition(transform 0.5s);
     @include transform(translate(0, 0) scale(0.01));
