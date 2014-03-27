@@ -1,21 +1,23 @@
 {
     "name": "shape-shifter",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "shape-shifter is an all-in-one icon element that can morph into different shapes.",
     "authors": [
         "Martin Kleinschrodt"
     ],
     "license": "MIT",
-    "main": "src/shape-shifter.html",
+    "main": "shape-shifter.html",
     "keywords": [
         "polymer",
         "web components",
         "icon"
     ],
     "ignore": [
-        ".sass-cache",
-        "node_modules",
-        "bower_components"
+        "src",
+        ".gitignore",
+        "Gruntfile.js",
+        "index.html",
+        "package.json"
     ],
     "dependencies": {
         "platform": "Polymer/platform#~0.2.0",
