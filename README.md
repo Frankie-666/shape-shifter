@@ -10,6 +10,28 @@ shape-shifter is an all-in-one icon element that can morph into different shapes
 
 ## Usage
 
+### With Bower
+
+1. Install the component
+
+    ```sh
+    $ bower install shape-shifter
+    ```
+2. Load polymer platform and shape-shifter element
+
+    ```html
+    <script src="bower_components/platform/platform.js"></script>
+    <link rel="import" href="bower_components/shape-shifter/shape-shifter.html">
+    ```
+
+3. Start using it!
+
+    ```html
+    <shape-shifter shape="plus"></shape-shifter>
+    ```
+
+### Without Bower
+
 1. Import Web Components' polyfill:
 
     ```html
