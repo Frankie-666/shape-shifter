@@ -18,8 +18,11 @@
     <polymer-element name="shape-shifter-demo" touch-action="none">
         <template>
             <style>
-                h1 {
+                :host {
                     font-family: monospace;
+                }
+
+                h1 {
                     text-align: center;
                     padding: 30px;
                 }
@@ -40,8 +43,31 @@
                     height: 50px;
                     cursor: pointer;
                 }
+
+                /*.springy {
+                    text-align: center;
+                    margin-top: 30px;
+                    font-size: 25px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    -o-user-select: none;
+                    user-select: none;
+                }*/
+
+                .springy span {
+                    cursor: pointer;
+                }
+
+                .springy input {
+                    display: none;
+                }
+
+                .springy input:not(:checked) + span {
+                    text-decoration: line-through;
+                }
             </style>
-            <shape-shifter id="hero" shape="{{ shape }}" class="hero"></shape-shifter>
+            <shape-shifter id="hero" shape="{{ shape }}" class="hero" springy="{{ springy }}"></shape-shifter>
             <div class="gallery">
                 <shape-shifter shape="plus" on-tap="{{ shift }}"></shape-shifter>
                 <shape-shifter shape="cancel" on-tap="{{ shift }}"></shape-shifter>
@@ -53,7 +79,10 @@
                 <shape-shifter shape="up" on-tap="{{ shift }}"></shape-shifter>
                 <shape-shifter shape="down" on-tap="{{ shift }}"></shape-shifter>
             </div>
-            <h1>&lt;shape-shifter shape="{{ shape }}"&gt;</h1>
+            <h1>&lt;
+                shape-shifter shape="{{ shape }}"
+                <label class="springy"><input type="checkbox" checked="{{ springy }}"><span>springy</span></label>
+                &gt;</h1>
         </template>
         <script>
             Polymer("shape-shifter-demo", {
