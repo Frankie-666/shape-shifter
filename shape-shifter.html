@@ -14,16 +14,16 @@
         svg {
             width: 100%;
             height: 100%;
-            stroke: currentColor;
+            stroke: var(--shape-shifter-primary-color, currentColor);
         }
 
         line {
             stroke-width: 6;
-            -webkit-transition: -webkit-transform 0.5s;
-            -moz-transition: -moz-transform 0.5s;
-            -ms-transition: -ms-transform 0.5s;
-            -o-transition: -o-transform 0.5s;
-            transition: transform 0.5s;
+            -webkit-transition: -webkit-transform 0.5s, stroke 0.5s;
+            -moz-transition: -moz-transform 0.5s, stroke 0.5s;
+            -ms-transition: -ms-transform 0.5s, stroke 0.5s;
+            -o-transition: -o-transform 0.5s, stroke 0.5s;
+            transition: transform 0.5s, stroke 0.5s;
             -webkit-transform: translate(0, 0) scale(0.01);
             -moz-transform: translate(0, 0) scale(0.01);
             -ms-transform: translate(0, 0) scale(0.01);
@@ -32,11 +32,11 @@
         }
 
         :host([springy]) line {
-            -webkit-transition: -webkit-transform 0.5s cubic-bezier(.71, -0.51, 0, 1.3);
-            -moz-transition: -moz-transform 0.5s cubic-bezier(.71, -0.51, 0, 1.3);
-            -ms-transition: -ms-transform 0.5s cubic-bezier(.71, -0.51, 0, 1.3);
-            -o-transition: -o-transform 0.5s cubic-bezier(.71, -0.51, 0, 1.3);
-            transition: transform 0.5s cubic-bezier(.71, -0.51, 0, 1.3);
+            -webkit-transition: -webkit-transform 0.5s cubic-bezier(.71, -0.51, 0, 1.3), stroke 0.5s;
+            -moz-transition: -moz-transform 0.5s cubic-bezier(.71, -0.51, 0, 1.3), stroke 0.5s;
+            -ms-transition: -ms-transform 0.5s cubic-bezier(.71, -0.51, 0, 1.3), stroke 0.5s;
+            -o-transition: -o-transform 0.5s cubic-bezier(.71, -0.51, 0, 1.3), stroke 0.5s;
+            transition: transform 0.5s cubic-bezier(.71, -0.51, 0, 1.3), stroke 0.5s;
         }
 
         :host[shape="plus"] line:nth-child(1) {
@@ -197,6 +197,31 @@
             -ms-transform: translate(17px, 0) rotate(-45deg) scale(9, 1);
             -o-transform: translate(17px, 0) rotate(-45deg) scale(9, 1);
             transform: translate(17px, 0) rotate(-45deg) scale(9, 1);
+        }
+
+        :host([shape="copy"]) line:nth-child(1) {
+            -webkit-transform: translate(-9px, -10px) scale(9, 10);
+            -moz-transform: translate(-9px, -10px) scale(9, 10);
+            -ms-transform: translate(-9px, -10px) scale(9, 10);
+            -o-transform: translate(-9px, -10px) scale(9, 10);
+            transform: translate(-9px, -10px) scale(9, 10);
+        }
+
+        :host([shape="copy"]) line:nth-child(2) {
+            -webkit-transform: translate(0, 0) scale(9, 10);
+            -moz-transform: translate(0, 0) scale(9, 10);
+            -ms-transform: translate(0, 0) scale(9, 10);
+            -o-transform: translate(0, 0) scale(9, 10);
+            transform: translate(0, 0) scale(9, 10);
+            stroke: var(--shape-shifter-secondary-color, #ffffff);
+        }
+
+        :host([shape="copy"]) line:nth-child(3) {
+            -webkit-transform: translate(9px, 10px) scale(9, 10);
+            -moz-transform: translate(9px, 10px) scale(9, 10);
+            -ms-transform: translate(9px, 10px) scale(9, 10);
+            -o-transform: translate(9px, 10px) scale(9, 10);
+            transform: translate(9px, 10px) scale(9, 10);
         }
     </style>
 
