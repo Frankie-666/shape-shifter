@@ -55,9 +55,14 @@ shape-shifter is an all-in-one icon element that can morph into different shapes
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`shape`    | plus, cancel, check, menu, more, left, right, top, down | [empty] | The shape to take on. If empty, will show nothing.
+`shape`    | plus, cancel, check, menu, more, left, right, top, down, copy, edit, home, save, trash | [empty] | The shape to take on. If empty, will show nothing.
 `color`    | *string*                  | `#000`              | The color of the element
 `springy`  | *boolean*                 | `false`             | Use a different animation
+
+## Custom CSS properties
+
+`--shape-shifter-primary-color` defines the primary stroke color. Default is `currentColor`
+`--shape-shifter-secondary-color` defines the secondary stroke color. Default is `#ffffff`
 
 ## Contributing
 
