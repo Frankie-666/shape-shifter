@@ -55,7 +55,7 @@ shape-shifter is an all-in-one icon element that can morph into different shapes
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`shape`    | plus, cancel, check, menu, more, left, right, top, bottom | [empty] | The shape to take on. If empty, will show nothing.
+`shape`    | plus, cancel, check, menu, more, left, right, top, down | [empty] | The shape to take on. If empty, will show nothing.
 `color`    | *string*                  | `#000`              | The color of the element
 `springy`  | *boolean*                 | `false`             | Use a different animation
 
