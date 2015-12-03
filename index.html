@@ -78,21 +78,23 @@
                 &gt;</h1>
         </template>
         <script>
-            Polymer({
-                is: "shape-shifter-demo",
-                properties: {
-                    shape: {
-                        type: String,
-                        value: "plus"
+            window.addEventListener("WebComponentsReady", function() {
+                Polymer({
+                    is: "shape-shifter-demo",
+                    properties: {
+                        shape: {
+                            type: String,
+                            value: "plus"
+                        },
+                        springy: {
+                            type: Boolean,
+                            value: true
+                        }
                     },
-                    springy: {
-                        type: Boolean,
-                        value: true
+                    shift: function(e) {
+                        this.shape = e.currentTarget.shape;
                     }
-                },
-                shift: function(e) {
-                    this.shape = e.currentTarget.shape;
-                }
+                });
             });
         </script>
     </dom-module>
